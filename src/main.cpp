@@ -12,8 +12,8 @@
 
 RTC_DS1307 m_rtc; ///< DS1307 RTC
 
-const DateTime m_start = DateTime(2000, 1, 1, 23, 05, 0); ///< time when realy turn on
-const DateTime m_stop = DateTime(2000, 1, 1, 23, 07, 0);  ///< time when realy turn off
+const DateTime m_start = DateTime(2000, 1, 1, 16, 48, 0); ///< time when realy turn on
+const DateTime m_stop = DateTime(2000, 1, 1, 16, 50, 0);  ///< time when realy turn off
 const byte m_output_pin = 2;        ///< pin connected to relay
 const int min_in_h = 60;            ///< minutes in an hour
 const int refresh_time_ms = 15000;  ///< time of repeting check time is in range and sending message
@@ -36,7 +36,7 @@ bool is_in_range(const DateTime& current, const DateTime& start, const DateTime&
   int end_minute = end.hour() * min_in_h;
   end_minute += end.minute();
 
-  return((current_minute >= start_minute) && (current_minute <= end_minute));
+  return((current_minute >= start_minute) && (current_minute < end_minute));
 }
 
 /**
