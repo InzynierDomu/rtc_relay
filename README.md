@@ -17,6 +17,8 @@ const DateTime m_stop = DateTime(2000, 1, 1, 16, 50, 0); ///< time when realy tu
 
 From these two DateTime format yyyy, mm, dd, hh, mm, ss only hh, mm is important.
 For this example relay turn in 16:48 and turn of in 16:50.
+<br><br>
+Setting the time is executing when the project is built and uploaded to the board with the connected RTC
 
 ## Scheme
 
