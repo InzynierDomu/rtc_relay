@@ -22,6 +22,10 @@ Setting the time is executing when the project is built and uploaded to the boar
 
 ## Scheme
 
+You can use ready RTC module
+![alt text](https://github.com/InzynierDomu/rtc_relay/blob/main/schem_2.PNG)
+<br>
+or use chip with other elements.
 ![alt text](https://github.com/InzynierDomu/rtc_relay/blob/main/schem_1.PNG)
 
 ## IDE
