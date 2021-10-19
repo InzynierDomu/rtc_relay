@@ -61,10 +61,12 @@ void setup()
     Serial.println("Couldn't find RTC");
   }
 
+#ifdef DEBUG
   if (!m_rtc.isrunning())
   {
-    Serial.println("RTC is NOT running, let's set the time!");
+    Serial.println("RTC is NOT running");
   }
+#endif
 
   m_rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
 }
