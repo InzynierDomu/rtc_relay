@@ -9,6 +9,7 @@
 #include "RTClib.h"
 
 #include <Arduino.h>
+#include <SPI.h>
 #include <Wire.h>
 
 RTC_DS1307 m_rtc; ///< DS1307 RTC

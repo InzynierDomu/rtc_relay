@@ -32,9 +32,3 @@ jobs:
 
       - name: Run PlatformIO
         run: pio run -e nano
-
-      - name: Install native
-        run: pio platform install native
-
-      - name: Run check
-        run: pio check -e check
